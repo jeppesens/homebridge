@@ -13,4 +13,4 @@ services:
     volumes:
       - ./homebridge:/homebridge
     devices:
-      - /dev/ttyUSB-zwave:/dev/ttyUSB-zwave
+      - /dev/ttyACM0:/dev/ttyACM0
