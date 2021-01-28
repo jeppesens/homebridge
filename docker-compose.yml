@@ -1,0 +1,19 @@
+version: '3.6'
+services:
+  homebridge:
+    image: oznu/homebridge:latest
+    restart: always
+    network_mode: host
+    environment:
+      - TZ=Europe/Stockhoolm
+      - PGID=1000
+      - PUID=1000
+      - HOMEBRIDGE_CONFIG_UI=1
+      - HOMEBRIDGE_CONFIG_UI_PORT=8080
+      - HOMEBRIDGE_DEBUG=1
+    volumes:
+      - ./homebridge:/homebridge
+      - /dev/ttyUSB-zwave:/dev/ttyUSB-zwave
+    ports:
+      - 8080:8080
+      - 53082:53082
