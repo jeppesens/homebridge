@@ -8,3 +8,5 @@ RUN CFLAGS=-D_GLIBCXX_USE_CXX11_ABI=0 make
 RUN CFLAGS=-D_GLIBCXX_USE_CXX11_ABI=0 make install
 
 RUN ldconfig
+
+WORKDIR /homebridge
