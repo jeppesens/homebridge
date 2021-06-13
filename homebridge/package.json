@@ -2,8 +2,8 @@
   "private": true,
   "description": "This file keeps track of which plugins should be installed.",
   "dependencies": {
+    "homebridge-dyson-pure-cool": "^2.0.3",
     "homebridge-glue": "^3.0.3",
-    "homebridge-platform-zwave": "^1.2.0",
     "homebridge-yr": "^1.0.0"
   }
 }
