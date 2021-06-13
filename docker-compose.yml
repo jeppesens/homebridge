@@ -1,8 +1,9 @@
 version: '3.6'
 services:
   homebridge:
-    build:
-      context: .
+    # build:
+    #   context: .
+    image: oznu/homebridge:ubuntu
     restart: always
     network_mode: host
     environment:
